@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itlab.test.TestDao">
+
+    <select id="selectTest" resultType="string">
+        SELECT 'TEST'
+    </select>
+
+    <insert id="insertStressTest" parameterType="string">
+        INSERT INTO STRESS_TEST (TEST) VALUES(#{test});
+    </insert>
+
+</mapper>
